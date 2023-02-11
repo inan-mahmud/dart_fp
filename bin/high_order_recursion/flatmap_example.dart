@@ -21,9 +21,9 @@ void main() {
   print(_result);
   
   final _reducedResult = _arr2.reduce((value, element) => value+element);
-  print(_reducedResult);
+  print(_reducedResult); //91
 
   //fold method -using fold we can give a initial value 
   final _foldResult = _arr2.fold<int>(0, (previousValue, element) => previousValue + element);
-  print(_foldResult);
+  print(_foldResult); //91
 }
