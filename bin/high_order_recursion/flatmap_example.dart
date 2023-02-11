@@ -18,7 +18,7 @@ void main() {
     if(element is int) return [element];
     return [];
   });
-  print(_result);
+  print(_result); // (1, 2, 3, 4, 5, 6, 7, 8)
   
   final _reducedResult = _arr2.reduce((value, element) => value+element);
   print(_reducedResult); //91

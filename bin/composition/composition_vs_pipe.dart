@@ -2,8 +2,8 @@ void main() {
   final _compose = compose(doubler, increment);
   final _pipe = pipe(doubler, increment);
 
-  print(_compose(10));
-  print(_pipe(10));
+  print(_compose(10)); // 22
+  print(_pipe(10)); // 21
 }
 
 int increment(int value) => value + 1;

@@ -14,9 +14,9 @@ String exclaim(String value) => '$value!';
 
 void main() {
   final _shout = compose(exclaim, toUpper);
-  print(_shout('Ouch! that hurts'));
+  print(_shout('Ouch! that hurts')); // OUCH! THAT HURTS!
 
   //using fpdart
   final compose1 = Compose(toUpper, 'Ouch! that hurts').c1(exclaim);
-  print(compose1());
+  print(compose1()); //OUCH! THAT HURTS!
 }
